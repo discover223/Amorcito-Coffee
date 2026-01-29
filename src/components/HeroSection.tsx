@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Amorcito Coffee - Fresh coffee and pastries"
+          alt="Cafe - Fresh coffee and pastries"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
@@ -26,9 +26,9 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-accent leading-tight mb-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            Amorcito Coffee
+            Cafe
             <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-brown-light mt-2">
-              Siempre Hecho Con Amor
+              Fresh Coffee & Pastries, Crafted with Love
             </span>
           </h1>
 
