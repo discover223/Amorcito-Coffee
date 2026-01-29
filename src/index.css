@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Amorito Coffee - Warm, cozy light pink theme */
+    --background: 30 50% 98%;
+    --foreground: 25 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 30% 20%;
+
+    /* Light Pink Primary */
+    --primary: 350 100% 88%;
+    --primary-foreground: 25 40% 25%;
+
+    /* Warm Cream Secondary */
+    --secondary: 30 40% 94%;
+    --secondary-foreground: 25 30% 25%;
+
+    /* Muted tones */
+    --muted: 30 30% 92%;
+    --muted-foreground: 25 20% 45%;
+
+    /* Warm Brown Accent */
+    --accent: 25 45% 30%;
+    --accent-foreground: 30 50% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 30% 88%;
+    --input: 30 30% 88%;
+    --ring: 350 80% 75%;
+
+    --radius: 1rem;
+
+    /* Custom tokens */
+    --pink-soft: 350 100% 92%;
+    --pink-medium: 350 80% 80%;
+    --brown-warm: 25 45% 30%;
+    --brown-light: 25 35% 45%;
+    --cream: 30 50% 96%;
+    --cream-dark: 30 40% 90%;
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 20% / 0.08);
+    --shadow-medium: 0 8px 30px -6px hsl(25 30% 20% / 0.12);
+    --shadow-pink: 0 8px 30px -6px hsl(350 100% 88% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 30% 10%;
+    --foreground: 30 50% 95%;
+
+    --card: 25 25% 15%;
+    --card-foreground: 30 50% 95%;
+
+    --popover: 25 25% 15%;
+    --popover-foreground: 30 50% 95%;
+
+    --primary: 350 80% 75%;
+    --primary-foreground: 25 30% 10%;
+
+    --secondary: 25 25% 20%;
+    --secondary-foreground: 30 50% 95%;
+
+    --muted: 25 20% 20%;
+    --muted-foreground: 30 30% 60%;
+
+    --accent: 350 60% 70%;
+    --accent-foreground: 25 30% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 20% 25%;
+    --input: 25 20% 25%;
+    --ring: 350 60% 60%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-warm {
+    @apply bg-gradient-to-r from-accent to-brown-light bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-pink {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--pink-soft)) 100%);
+  }
+
+  .bg-gradient-cream {
+    background: linear-gradient(180deg, hsl(var(--cream)) 0%, hsl(var(--background)) 100%);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-pink {
+    box-shadow: var(--shadow-pink);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--cream));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--pink-medium));
+}
