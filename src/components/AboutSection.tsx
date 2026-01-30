@@ -35,7 +35,7 @@ const AboutSection = () => {
             Where Every Cup Feels Like a Hug
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            At Amorito Coffee, every cup feels like a hug. We handcraft drinks, bake pastries in small batches, and serve every guest with a smile. We're a place where neighbors meet, friends catch up, and your day gets a little warmer.
+            At Our Café, every cup feels like a hug. We handcraft drinks, bake pastries in small batches, and serve every guest with a smile. We're a place where neighbors meet, friends catch up, and your day gets a little warmer.
           </p>
         </div>
 

@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
                 <Coffee className="w-5 h-5 text-accent" />
               </div>
-              <span className="font-bold text-xl">Amorcito Coffee</span>
+              <span className="font-bold text-xl">Café Preview</span>
             </div>
             <p className="text-accent-foreground/80 text-sm leading-relaxed mb-4">
               Siempre Hecho Con Amor. Warm drinks, fresh pastries, and friendly faces.
@@ -85,7 +85,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-accent-foreground/10 text-center text-sm text-accent-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Amorcito Coffee. All rights reserved. Made with ❤️</p>
+          <p>&copy; {new Date().getFullYear()} Café Preview. All rights reserved. Made with ❤️</p>
         </div>
       </div>
     </footer>

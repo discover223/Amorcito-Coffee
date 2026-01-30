@@ -203,7 +203,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
       <!DOCTYPE html>
       <html>
       <head>
-        <title>Amorito Coffee - Receipt</title>
+        <title>Café Preview - Receipt</title>
         <style>
           body { font-family: 'Courier New', monospace; padding: 20px; max-width: 300px; margin: 0 auto; }
           .header { text-align: center; margin-bottom: 20px; }
@@ -222,7 +222,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
       </head>
       <body>
         <div class="header">
-          <h1>☕ Amorito Coffee</h1>
+          <h1>☕ Café Preview</h1>
           <p>Order Receipt</p>
           <p>Order #: ${order.orderNumber}</p>
           <p>${order.orderTime}</p>
